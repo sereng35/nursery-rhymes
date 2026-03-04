@@ -18,3 +18,4 @@ pub mod grid;
 pub mod still_image;
 pub mod text_button;
 pub mod preload_image;
+pub mod scale;

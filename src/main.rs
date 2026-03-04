@@ -10,6 +10,7 @@ use crate::modules::label::Label;
 use crate::modules::preload_image::TextureManager;
 use crate::modules::still_image::StillImage;
 use crate::modules::text_button::TextButton;
+use crate::modules::scale::use_virtual_resolution;
 use macroquad::prelude::*;
 
 /// Set up window settings before the app runs
@@ -28,6 +29,7 @@ fn window_conf() -> Conf {
 
 #[macroquad::main(window_conf)]
 async fn main() {
+    use_virtual_resolution(1400.0, 1100.0);
      clear_background(WHITE);
     draw_grid(50.0, BROWN);
    
